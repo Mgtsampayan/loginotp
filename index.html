@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LOGIN WITH OTP</title>
+</head>
+<body>
+	<div class="container w3-card">
+		<div class="err"></div>
+		<form id="mobile-number-verification">
+			<div class="mobile-heading">Mobile Number Verification</div>
+			<div class="mobile-row">
+			    <input typ="text" id="name" class="mobile-input" placeholder="Enter your name">
+			    <br>
+			    <br>
+				<input type="number" id="mobile" class="mobile-input" placeholder="Enter the 10 digit mobile number">
+			</div>
+			<div id="loading-image">
+			<img src="ajax-loader.gif" alt="ajax loader">
+			</div>
+            <input type="button" class="mobileSubmit" value="Get OTP"onClick="getOTP();">
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
